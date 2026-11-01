@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>RootDeck</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-glow"></div>
+<div class="sb-scrim"></div>
+<main>
+  <section class="view on" data-view="home"><div class="wrap" id="home"></div></section>
+  <section class="view" data-view="tune"><div class="wrap" id="tune"></div></section>
+  <section class="view" data-view="apps"><div class="wrap" id="apps"></div></section>
+  <section class="view" data-view="tools"><div class="wrap" id="tools"></div></section>
+</main>
+<nav class="tabbar" id="tabbar"></nav>
+<div class="batch" id="batch"></div>
+<div id="gate" class="gate">
+  <div class="logo pulse"></div>
+  <h2 id="gateT">Requesting root</h2>
+  <p id="gateP">Approve RootDeck in the Magisk prompt.</p>
+  <button class="btn acc hide" id="gateBtn">Try again</button>
+</div>
+<div id="toasts"></div>
+<script>if (!window.Native) document.write('<script src="mock.js"><\/script>');</script>
+<script src="app.js"></script>
+</body>
+</html>
